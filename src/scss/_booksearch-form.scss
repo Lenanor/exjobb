@@ -1,0 +1,158 @@
+// Search form 1, visible for >767px
+.open-contact-search-wrap {
+	display: none;
+	@include break(768px, 9999px) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// Search form 1, visible for >767px
+	form.search-form-anet { 
+    	height: 50px;
+    	position: relative;
+    	width: 45%;
+
+    	p {
+    		display: none;
+    	}
+    	input, button {
+		    box-sizing: border-box;
+		    height:50px;
+		    line-height:50px;
+		    margin:0;
+		    padding:0;
+		    vertical-align:top;      
+		}
+
+		button {
+			background-color: $black;
+			border: none;
+			border-radius: 0;
+			color: $white;
+			font-size: 1em;
+			height: 50px;
+			position: absolute;
+			right: 0;
+			width: 50px;
+		}
+		
+		input {
+			-webkit-box-shadow: inset 0 0 0px 9999px white;
+			border: 3px $black solid;
+			font-size: 0.7em;
+			outline: none;
+			padding: 10px;
+			position: absolute;
+			right: 50px;
+			width: 80%;
+		}
+		
+		.fa-search {
+			color: $black;
+			position: absolute;
+			z-index: 100;
+			right: 55px;
+			top: 25px;
+			transform: translateY(-50%);
+		}
+		.fa-search:before {
+			font-size: 1.5em;
+		}
+	}
+}
+
+// Search form 2, visible for <767px
+section.search-2-start {
+	@include break(500px, 767px) {
+	    padding: 1.5em;
+	}
+	@include break(768px, 9999px) {
+		display: none;
+	}
+}
+
+section.contact-search-2 {
+	margin-top: 50px;
+	@include break(768px, 9999px) {
+		margin-top: 0;
+	}
+	.buy-sell-page{
+		max-width: 636px;
+		margin: 0 auto;
+	}
+	.search-form-2 {
+		height: auto;
+	    background-color: $green;
+	    margin-top: 30px;
+	    padding: 0.5em 0.5em 1.5em 0.5em;
+	    
+		.search-form-anet{
+			p {
+				width: 100%;
+				@include break(576px, 9999px) {
+	    			width: 70%;
+	    		}
+	    		margin: 0 auto;
+	    		font-size: .9em;
+			}
+	
+			.search-items {
+				height: 50px;
+				position: relative;
+	    		margin: 0 auto;
+	    		padding: 1em 0;
+	    		width: 100%;
+	    		@include break(576px, 9999px) {
+	    			width: 70%;
+	    		}
+		
+	    		input, button {
+			    	box-sizing: border-box;
+			    	height:50px;
+			    	line-height:50px;
+			    	margin:0;
+			    	padding:0;
+			    	vertical-align:top;      
+				}
+				button {
+						background-color: $black;
+						border: none;
+						border-radius: 0;
+						color: $white;
+						font-size: 1em;
+						height: 50px;
+						position: absolute;
+						right: 0;
+						width: 15%;
+				}
+				
+				input {
+					border: 3px $black solid;
+					font-size: 0.7em;
+					padding: 10px;
+					position: absolute;
+					width: 85%;
+					@include break(768px, 9999px) {
+						//right: calc(25% + 25px);	
+					}
+				}
+			
+				.fa-search {
+					color: $black;
+					font-size: .6em;
+					position: absolute;
+					right: 18%;
+	    			top: 48%;
+					transform: translateY(-50%);
+					z-index: 100;
+				}
+	
+				.fa-search:before {
+					font-size: 3em;
+				}
+				
+			}
+		}
+	}
+}
+

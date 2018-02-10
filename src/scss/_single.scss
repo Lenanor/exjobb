@@ -1,0 +1,138 @@
+.single-book, single-event {
+	h2 {
+		font-size: 1.9em;
+	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			font-weight: 700; 
+		}
+	}
+}
+.single-book, .single-other, .single-event {
+	a {
+		color: $book-green;
+	}
+	.right {
+		text-align: right;
+	}
+	a {
+		font-size: .85em;
+	}
+}
+
+.other-background {
+	background-color: $pink;
+	.other-single-wrap {
+		img {
+			max-width: 95%;
+			height: auto;
+		}
+	}
+	.other-single-about {
+		p {
+			color: $white;
+		}
+	}
+}
+
+.publish-background {
+	background-color: $pink;
+}
+
+.event-background {
+ 	background-color: $pink;
+ 	.event-date-time {
+ 		color: $white;
+ 		margin: 0 auto;
+		max-width: 620px;
+		p {
+			font-weight: 700;
+			margin-top: 0; 
+		}
+ 	}
+ 	.event-single-wrap {
+ 		background-color: $white;
+		margin: 0 auto 2.5em auto;
+		max-width: 600px;
+		padding: .7em;		
+		img {
+			height: auto;
+			max-width: 100%;
+			margin-left: 50%;
+    		transform: translateX(-50%);
+		}
+	}
+}
+
+.book-background{
+	background-color: $book-green;
+}
+
+.single-background {
+	padding: 1em;
+	@include break(768px, 991px) {
+		padding: 2em;
+	}
+	@include break(992px, 9999px) {
+		padding-top: 3em;
+	}
+	.book-single-wrap {
+		background-color: $white;
+		display: flex;
+		margin: 0 auto;
+		max-width: 600px;
+		padding: .7em;		
+		img {
+			max-height: 150px;
+			padding-right: 0.6em;
+			width: auto;
+			@include break(400px, 9999px) {
+				padding-right: 10%;
+			}
+			@include break(768px, 9999px) {
+				max-height: 500px;
+				width: auto;	
+			}
+		}
+		
+		p {
+			color: black;
+			font-size: .8em;
+			line-height: 1.2;
+			margin: 0;
+			@include break(576px, 9999px) {
+				font-size: .85em;
+			}
+			@include break(768px, 9999px) {
+				font-size: 1.1em;
+			}
+		}
+	}
+}
+
+.book-single-about {
+	margin: 40px auto;
+	@include break(0, 767px) {
+		margin: 20px auto;	
+	}
+}
+
+.event-single-about {
+	margin: 0 auto;
+}
+
+.book-single-about, .event-single-about {
+	max-width: 620px;
+	color: $white;
+	p {
+		font-size: 1em;
+		margin: 5px 0;
+		@include break(768px, 9999px) {
+			margin: 10px 0;
+		}
+		@include break(992px, 9999px) {
+			//margin-top: 20px;
+		}
+	}
+}

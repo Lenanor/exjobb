@@ -1,0 +1,96 @@
+// General style of text-squares on front page
+
+.square-block-wrap {
+	margin-top: 100px;
+	font-weight: bold;
+	@include break(768px, 9999px) {
+		margin-top: 150px;	
+	}
+	@include break(0, 576px) {
+		p {
+			font-size: .8em;
+		}
+	}
+	
+	.square {
+		padding: 40px;
+		display: block;
+	}
+
+	.white-square {
+		h2 {
+			color: $black;
+		}
+		p {
+			color: $darker-green;
+		}
+		a {
+		color:$ronnells_green;
+		}
+		a:hover {
+			color: $black;
+		}
+	}
+
+	.black-square {
+			background-color: $black;
+			h2, p {
+				color: $white;
+			}
+			a {
+				color: $green;
+			}
+			a:hover {
+				color: $darker-green;
+			}	
+		}
+
+	.first-square-section {
+		@include break(577px, 9999px) {
+			display: flex;
+		}
+		.square-white-container {
+			@include break(577px, 9999px) {
+				width: 40%;
+			}
+		}
+		.square-black-1-container {
+			@include break(577px, 9999px) {
+				width: 60%;
+			}
+		}
+	}
+
+	.square-green-container {
+		background-color: $green;
+		h2, p {
+			color: $black;
+		}
+		a {
+			color: $green;
+		}
+		a:hover {
+			color: $darker-green;
+		}	
+	}
+
+	.square-black-2-container {
+		@include break(577px, 9999px) {
+			width: 65%;
+		}			
+	}
+
+	// Block about Rönnells Vänner
+	article#friends-wrap {
+		@include break(577px, 9999px) {
+			//width: auto;
+			max-width: 80%;
+    		margin-left: 20%;
+    		padding-right: 0;		
+		}
+	}
+}
+
+
+
+

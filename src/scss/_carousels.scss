@@ -1,0 +1,238 @@
+// raster image and heading for carousel
+section.carousel {
+	margin-top: 0;
+	h2 {
+		@include break(0, 435px) {
+			margin-top: 100px;
+		}
+		a {
+			color: $black;	
+		}
+	}
+	h2#heading-books {
+		a {
+			&:hover {
+				color: $book-green;	
+			}
+			&::after {
+  			content: url("src/img/raster.svg");
+  			position: relative;
+  			top: 40px;
+  			left: -170px;
+  			@include break(0, 435px) {
+  			 	 	content: url("");
+  			 	}
+  			}
+  		}
+	}
+
+	h2#heading-events {
+		a {
+			&:hover {
+				color: $pink;	
+			}
+		
+			&::after {
+  				content: url("src/img/raster.svg");
+  				position: relative;
+  				top: 40px;
+  				left: -240px;
+  				@include break(0, 435px) {
+  		 	 		content: url("");
+  		 		}
+  			}
+  		}
+	}
+
+		h2#heading-other {
+		a {
+			&:hover {
+				color: $pink;	
+			}
+		
+			&::after {
+  				content: url("src/img/raster.svg");
+  				position: relative;
+  				top: 40px;
+  				left: -150px;
+  				@include break(0, 435px) {
+  		 	 		content: url("");
+  		 		}
+  			}
+  		}
+	}
+}
+
+// To prevent items to jump when page loads
+.carousel-wrapper {
+    visibility: hidden;
+    .slick-initialized {        
+        visibility: visible;
+        margin-top: 20px;
+    }
+    .carousel-item-wrapper {
+        height: auto;
+        position: relative;
+        a {
+            
+        	img {
+        	    @include break(0px, 379px) {
+        	    	margin: 0 auto 20px auto;
+        	    }
+        	}
+    	}
+    	h3 {
+    		font-size: .8em;
+    		font-weight: 500;
+    	}
+    	p {
+    		color: black;
+    		font-weight: 700;
+    		margin: 5px 0;	
+    	}
+    }
+}
+
+//Items in books carousel
+.carousel-books {
+	padding-left: 5px;
+	a {
+		outline: none;
+		h3 {
+			text-transform: uppercase;
+			color: $black;
+		}
+		&:hover {
+			p, h3 {
+				color: $book-green;
+			}
+		}
+		div.img-wrap {
+    		@include break(0px, 379px) {
+    			background-color: #f5f5f2;
+    			margin-left: 20%;
+    			margin-left: 20%;
+    		}
+			img {
+				&:hover {
+					transform: scale(1.03);
+					transition: all 0.6s ease;
+				}
+				@include break(475px, 669px) {
+		 			padding-left: 20px;
+				}
+				@include break(670px, 1200px) {
+		 			padding-left: 30px;
+				}
+				@include break(1200px, 9999px) {
+		 			padding-left: 15px;
+				}
+			}
+		}
+
+		div.carousel-item-wrapper-info {
+		 	margin-top: 10px;
+		 	width: 150px;
+		 	
+		 	@include break(0px, 375px) {
+		 		margin: 5% 12% 0 20%;
+		 	}
+		 	@include break(376px, 474px) {
+		 		margin: 5% 12% 0 5%;
+		 	}
+			@include break(475px, 669px) {
+		 		padding-left: 20px;
+			}
+			@include break(670px, 1200px) {
+		 			padding-left: 30px;
+			}
+			@include break(1200px, 9999px) {
+		 			padding-left: 15px;
+			}
+			p {
+				&:nth-child(3) {
+					font-size: .6em;
+					margin-top: 20px;
+					text-transform: uppercase; 
+				}
+			}
+		}
+	}
+}
+
+//Items in events carousel
+#events {
+	position: relative;
+
+	#events-link {
+		outline: none;
+		h3 {
+			text-transform: uppercase;
+			color: $black;
+		}
+		&:hover {
+			p, h3 {
+				color: $pink;
+			}
+		}
+		.img-event-wrap {
+			img {
+				width: 95%;
+				height: auto;
+				&:hover {
+					transform: scale(1.02);
+					transition: all 0.6s ease-out;
+
+				}
+			}
+		}
+		.event-date-time-wrap {
+			h3 {
+				font-size: .8em;
+			}		
+			.date-event {
+				background-color: #f5f5f2;
+				font-size: 1em;
+				font-weight: 700;
+				padding: 3px;
+				position: absolute;
+				right: 8px;
+    			top: 5px;
+    			text-transform: uppercase;
+    			overflow: hidden;
+			}
+			.time-event {
+				font-size: .7em;
+			}
+		}
+	}
+}
+
+//Items in other carousel
+#other {
+
+	#other-link {
+		outline: none;
+		h3 {
+			color: $black;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		&:hover {
+			p, h3 {
+				color: $pink;
+			}
+		}
+		.img-other-wrap {
+			height: 240px;
+			padding: 2px;
+			img {
+				&:hover {
+					transform: scale(1.02);
+					transition: all 0.6s ease-out;
+
+				}
+			}
+		}
+	}
+}

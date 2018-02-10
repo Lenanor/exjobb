@@ -1,0 +1,87 @@
+address {
+	span {
+	font-style: normal;
+	}
+}
+
+.contact-wrap {
+	a {
+		color: $gray;
+		&:hover {
+		//font-weight: 700;
+		color: $dark_gray;
+		}
+	}
+
+}
+
+
+// Below menu area: open hours, adress, search etc 
+.open-contact-search-wrap {
+
+	.open-contact-container {
+		color: $gray;
+		display: flex;
+		font-size: 0.6em;
+		@include break(850px, 9999px) {
+    		font-size: .7em;	
+    	}
+		div {
+			margin-right: 15px;
+			h3 {
+				color: $black;
+				font-size: .9em;
+				font-weight: 700;
+				line-height: 1.3;
+				margin: 0;
+				text-transform: uppercase;	
+
+			}
+		}
+	}
+
+	.newsletter-wrap {
+			display: none;
+	}
+}
+
+//Contact info and searchform visible < 768px
+.contact-info-2 {
+	.open-contact-container {
+		display: flex;
+		margin: 0px 0 20px 0;
+		font-size: .8em;
+		@include break(471px, 600px) {
+			font-size: .7em;
+		}
+		@include break(401px, 470px) {
+			font-size: .6em;
+		}
+		@include break(341px, 400px) {
+			font-size: .5em;
+		}
+		@include break(0px, 340px) {
+			font-size: .4em;
+		}
+		justify-content: space-between;
+
+		@include break(768px, 9999px) {
+			display: none;
+		}
+		div {
+			color: $gray;
+			h3 {
+				color: $black;
+				font-size: .9em;
+				font-weight: 700;
+				line-height: 1.3;
+				margin: 0;
+				text-transform: uppercase;	
+			}
+		}
+		
+		.newsletter-wrap {
+			display: none;
+		}
+	}
+}

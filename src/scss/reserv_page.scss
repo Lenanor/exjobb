@@ -1,0 +1,298 @@
+// //Position raster images with headings (h2)
+// h2.sub-page {
+// 	position: relative;
+// 	&::after {
+//   		content: url("src/img/raster.svg");
+//   		position: absolute;
+//   		top: -70px;
+//   		left: -40px;
+//   	}
+// }
+
+
+// // Pages böcker and evenemang
+// .books-heading-text, .event-heading-text  {
+// 	max-width: 650px; 
+// 	font-size: .9em;
+// 	a {
+// 		font-size: .8em;
+//     }
+// 	@include break(759px, 9999px) {
+// 		font-size: 1.1em;
+// 	}
+// }
+
+// // MailChimp form
+// #mc-embedded-subscribe-form {
+// 	margin: 5em auto 0 auto;
+// }
+
+// .event-heading-text {
+// 	a {
+// 		color: $pink;
+// 		&:hover {
+// 			color: #d82f73;
+// 			cursor: pointer;
+//     	}
+// 	}
+// 	h2,strong,.events-presentation-text{
+// 		&::selection {
+//   			color:$pink;
+// 		}
+// 	}
+// }
+
+// .books-heading-text {
+// 	a {
+// 		color: $book-green;
+// 		&:hover {
+// 			color: $darker-green;
+// 		}
+// 	}
+
+// 	h2,strong,p, a{
+// 		&::selection {
+//   			color: $book-green;
+// 		}
+// 	}
+// }
+
+// .pink {
+// 	background-color: $pink;
+// 	.items-wrap {
+// 		a {
+// 			&:hover {
+// 				color: $pink;
+// 			}
+// 		}
+// 	}
+// }
+// .green {
+// 	background-color: $book-green;
+// 	.items-wrap {
+// 		a {
+// 			.book-cover-image-wrap {
+// 				height: 300px;
+// 				margin: 5px;
+// 			}
+// 			p.bold {
+// 				font-weight: 700;
+// 				margin: 0;
+// 			}
+// 			&:hover {
+// 				color: $book-green;
+// 			}
+// 		}
+// 	}
+// }
+
+// .page-loop-items-wrap {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: flex-start;
+// 	margin-top: 3em;
+// 	@include break(759px, 9999px) {
+// 		padding-left: 9%; 
+// 	}
+// 	@include break(900px, 9999px) {
+// 		padding-left: 4%;
+// 		padding-top: 1em;	
+// 	}
+// 	@include break(1100px, 9999px) {
+// 		padding-left: 5%;
+// 		padding-top: 2em;
+// 		padding-bottom: 2em;	
+// 	}
+// 	@include break(1260px, 9999px) {
+// 		padding-left: 6%;
+// 	}
+// 	@include break(1260px, 9999px) {
+// 		padding-left: 7%;
+// 	}
+// 	@include break(1920px, 9999px) {
+// 		padding-left: 8%;	
+// 	}
+	
+// 	.items-wrap {
+// 		background-color: $white;
+// 		height: auto;
+// 		margin: 20px 10px;
+// 		padding: 5px;
+// 		position: relative;
+// 		width: 100%;
+		
+// 		@include break(759px, 9999px) {
+// 			width: 40%;
+// 		}
+// 		@include break(900px, 9999px) {
+// 			width: 28%;
+// 		}
+// 		@include break(1200px, 9999px) {
+				
+// 		}
+		
+// 		a {
+// 			color: $black;
+// 			font-size: .8em;
+// 			.img-wrap {
+// 				height: 60%;
+//     			overflow: hidden;
+// 			}
+			
+// 				img {
+// 					width: auto;
+// 					max-height: 300px;
+// 					display: block;
+// 					margin: 0 auto;
+// 					&:hover {
+// 						transform: scale(1.02);
+// 						transition: all 0.6s ease;
+// 					}
+// 					@include break(300px, 758px) {
+// 						//max-width: 250px;
+// 						height: auto;
+// 					}
+// 					@include break(759px, 899px) {
+// 						//max-width: 236px;
+// 						height: auto;
+// 					}
+// 					@include break(900px, 1199px) {
+// 						//max-width: 205px;
+// 						height: auto;	
+// 					}
+// 					@include break(1200px, 9999px) {
+// 						//max-width: 240px;
+// 						height: auto;	
+// 					}
+// 				}
+			
+// 			h3 {
+// 				font-size: 1em;
+// 				text-transform: uppercase;
+// 			}		
+// 			.date-event {
+// 				background-color: #f5f5f2;
+// 				font-size: 1.2em;
+// 				font-weight: 700;
+// 				padding: 2px 10px 12px 10px;
+// 				position: absolute;
+// 				right: 0;
+//     			top: 0px;
+//     			text-transform: uppercase;
+// 			}
+// 			.time-event {
+// 				font-size: .65em;
+// 				position: absolute;
+// 				right: 10px;
+//     			top: 28px;
+// 			}	
+// 		}
+// 	}
+// }
+
+// // Page Köpa & sälja, Vänförening, Om oss pages
+// .buy-wrap, .staff-wrap  {
+// 	display: flex;
+// 	justify-content: space-between;	
+// }
+
+// .background-black {
+// 	background-color: $black;
+// 	color: $white;
+// 	margin-top: 25px;
+// 	padding: 40px;
+	
+// 	a {
+// 		color: $green;
+// 		&:hover {
+// 			color: $darker-green;
+// 		}
+// 	}
+// }
+
+// // Köpa & sälja page
+// .buy-wrap{
+// 	.buy-sell {
+// 		margin-right: 30px;
+// 		width: 250%; 	
+// 	}
+// }
+// .sell-wrap{
+// 	background-color: black;
+//    	color: white;
+//    	margin-top: 30px;
+//    	width: 50%;
+//    	padding: 40px;
+// }
+
+// // About us page
+// .info-and-map-wrap{
+// 	margin-bottom: 80px;
+// 	@include break(576px, 9999px) {
+// 		padding: 20px;
+// 		display: flex;
+// 		justify-content: space-around;
+// 	}
+// 	.map {
+// 		width: 100%;
+// 		@include break(576px, 9999px) {
+// 			width: 65%;
+// 		}
+// 	}
+// 	p {
+// 		font-size: .9em;
+// 		margin-top: 2em;
+// 		@include break(0, 768px) {
+// 			font-size: .8em;
+// 		}
+// 		@include break(576px, 9999px) {
+// 			margin-top: 0;
+// 		}
+// 	}
+// }
+
+// .staff-wrap {
+// 	flex-wrap: wrap;
+// 	font-size: .8em;
+// 	@include break(0, 527px) {
+// 		justify-content: center; 
+// 	}
+// 	@include break(759px, 9999px) {
+// 		justify-content: flex-start;
+// 		padding-left: 0%; 
+// 	}
+// 	@include break(900px, 9999px) {
+// 		padding-left: 4%;	
+// 	}
+// 	@include break(1200px, 9999px) {
+// 		padding-left: 5%;	
+// 	}
+
+// 	.background-black {
+// 		background-color: $black;
+// 		border-radius: 100%;
+// 		margin-right: .5em;
+//     	overflow: hidden; 
+// 		padding: .8em;
+// 		position: relative;
+//     	width: 190px;
+//     	height: 190px;
+// 		.replacement-staff {
+// 			font-size: 1.2em;
+// 			text-transform: uppercase;
+// 		}
+// 		.about-staff {
+// 			font-size: .8em;
+//     		position: absolute;
+//     		top: 18%;
+//     		transform: translateX(-50%);
+//     		width: 80%;
+//     		left: 54%;
+// 		}
+// 	}
+// }
+
+
+
+
+

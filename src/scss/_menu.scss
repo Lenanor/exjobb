@@ -1,0 +1,230 @@
+// NAVIGATION
+
+// Hamburger bars
+.bar-wrap {
+	background-color: $white;
+	border-radius: 100%;
+	cursor: pointer;
+	display: inline-block;
+	height: 50px;
+	margin-top: 0;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+    width: 50px;
+    z-index: 300;
+    @include break(768px, 9999px) {
+    	display: none;
+    }
+
+	.bar-wrap-center {
+    	margin: 0 auto;
+    	padding-top: 4px;
+    	width: 100%;
+
+  		.bar1, .bar2{
+   			width: 30px;
+    		height: 5px;
+    		background-color: $black;
+    		border-radius: 15px;
+    		margin: 10px auto;
+		}
+		// Toggle from bars to X
+		.change1 {
+			transform: rotate(45deg) translate(7px, 7px);
+		}
+		.change2 {
+			transform: rotate(-45deg) translate(4px, -4px);
+		}	
+ 	}
+}
+
+.background-green {
+	background-color: transparent;
+}
+
+// Menu links
+.nav-wrap {
+	font-family: $text;
+	font-size: 1.2em;
+	font-weight: 400;
+	top: 0;
+	height: 100%;
+	position: absolute;
+	z-index: 200;
+	
+	@include break(768px, 9999px) {
+		background-color: transparent;
+		display: block;
+		font-size: 1em;
+		font-weight: 700;
+		top: 0%;
+		width: 100%;
+    	height: 82px;
+    	background-color: white;
+    	position: fixed;
+	}
+}
+
+.menu-header-menu-container {
+	background-color: $white;
+	display: none;
+	font-size: .7em;
+	height: 100%;	
+	position: fixed;
+	width: 100%;
+	right: 0;
+	top: 0;
+	@include break(768px, 9999px) {
+		background-color: $white;
+		border-bottom: 1px solid black;
+		display: block;
+		font-size: .9em;
+		height: 80px; 
+		margin: 0 auto;
+		padding-top: 2px;
+		position: fixed;
+		right: 7.5%;
+		width: 85%;
+		z-index: 400;	
+		@include break(993px, 9999px) {
+			width: 75%;
+			right: 12.5%;
+
+		}
+	}    
+}
+
+ul#menu-header-menu {
+	@include break(0px, 499px) {
+		top: 0;
+		padding: 20% 25%;
+		font-size: 1.2em;
+	}
+	@include break(500px, 767px) {
+		font-size: 1.7em;
+		padding: 10% 20%;	
+	}
+	@include break(768px, 9999px) {
+		display: flex;
+		flex-direction: row;
+		font-weight: 400;
+		justify-content: space-between;
+		margin-bottom: 15px;
+		padding-top: 0;
+	}
+
+	 	
+ 	li.menu-item {
+ 		margin-bottom: 30px;
+ 		@include break(577px, 9999px) {
+ 			display: block;
+ 		}
+ 		@include break(768px, 9999px) {
+ 			margin-bottom: 0;
+ 			text-align: center;
+ 		}
+ 	}
+
+  	a {
+  		background: none;
+  		color: $black;
+ 		display: inline-block;
+ 		@include break(577px, 9999px) {
+ 			color: $black;
+ 		}
+
+  	}
+ 
+	a::after {
+  		content: '';
+  		display:block;
+    	border-bottom: 3px solid $black;
+    	transform: scaleX(0); 
+    	transition: transform 300ms ease-in-out;
+	}
+	a:visited {
+		color: $black;
+	}
+	a:hover {
+		color: $black;
+	}
+	a:hover::after {
+  		transform: scaleX(1); 
+	}
+}
+
+
+.menu-item {
+	a {
+		@include break(0, 767px) {
+			position: relative;
+		}
+	}
+
+	a:hover {
+		@include break(0, 767px) {
+			font-weight: 700;
+		}
+	}
+	a::before {
+		@include break(0px, 499px) {
+		position: absolute;
+		top: -12px;
+		left: -60px;
+		}
+		@include break(500px, 767px) {
+			position: absolute;
+			top: -6px;
+			left: -80px;
+		}
+		@include break(768px, 9999px) {
+		    display: block;
+		}
+	}
+}
+
+
+
+.nav-link-home { 
+	a::before {
+  		content: url("src/img/home_2.svg");
+  	}
+}
+.nav-link-events { 
+	a::before {
+  		content: url("src/img/events_2.svg");
+  	}
+}
+.nav-link-book { 
+	a::before {
+  		content: url("src/img/books_2.svg");
+  	}
+}
+.nav-link-misc {
+	a::before {
+  		content: url("src/img/misc.svg");
+  	}
+}
+.nav-link-publication {
+	a::before {
+  		content: url("src/img/publication.svg");
+  	}
+}
+.nav-link-buy-sell {
+	a::before {
+  		content: url("src/img/events_2.svg");
+  	}
+}
+.nav-link-about-us {
+	a::before {
+  		content: url("src/img/aboutus.svg");
+  	}
+}
+.nav-link-friends {
+	a::before {
+  		content: url("src/img/friends.svg");
+  	}
+}
+
+

@@ -1,0 +1,80 @@
+
+// Friends and newsletter form (from MailChimp)
+#mc_embed_signup{
+	margin: 40px 0;
+
+	h2 {
+		font-size: 36px;
+	}
+	@include break(768px, 9999px) {
+		display: flex;
+		max-height: 550px;
+		overflow: hidden;	
+	}
+
+
+	form {
+	background: $black; 
+	clear:left;
+	color: $white;
+	font-family: $text;
+	font-size:14px;
+	padding: 30px;
+	@include break(576px, 767px) {
+		padding: 70px;
+	}
+	@include break(768px, 9999px) {
+		//width: 0%;
+		padding: 20px;		
+	}
+	
+
+	.asterisk {
+		color: $green;
+	}
+
+	div.clear {
+		padding-top: 40px;
+    	text-align: center;
+	}
+
+	.button {
+		background-color: $darker-green;
+		color: $white;
+		border-radius: unset;
+		
+	}
+	.button:hover {
+		background-color: $green;
+		color: black;
+	}
+
+	#mce-success-response {
+		text-align: center;
+		color: $white;
+	}
+
+	#mce-responses {
+		width: 100%;
+    	margin: 0;
+    	padding: 0;
+    	.response {
+    		float: none;
+    		margin: 0 auto;
+    	}
+	}
+
+
+	#mc_embed_signup_scroll {
+		h2 {
+			color: $white;
+			margin-top: 0;
+		}
+	}
+	}	 
+}
+
+
+
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */

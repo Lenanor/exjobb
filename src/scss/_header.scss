@@ -1,0 +1,144 @@
+
+#site-content {
+	font-family: $text, sans-serif;
+	width: 85%;
+	margin: 0 auto;
+	@include break(768px, 9999px) {
+		margin-top: 94px;
+	}
+	@include break(993px, 9999px) {
+		width: 75%;
+		
+	}
+	.header-logo-heading {
+		h1 {
+			text-align: right;
+			@include break( 0, 767px) {
+				text-align: left;
+			}
+			img {
+				width: 2.5em;
+			}
+		}
+	}
+}
+
+#header-logo:hover {
+	transform: scale(1.02);
+	transition: all 0.6s ease;
+}
+
+#image-info-wrap {
+	width: 100%;
+    margin: 0 auto;
+	@include break(768px, 9999px) {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 13%;
+	}
+	@include break(1061px, 9999px) {
+		margin-top: 8%;
+	}
+
+	// Image collage in header
+	div.header-image-collage {
+		@include break(768px, 9999px) {
+			width: 50%;
+		}
+		img.header-image {
+			display: none;
+			@include break(768px, 9999px) {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	
+	// Logo and text
+	article#logo-text-wrap {
+		width: 100%;
+		@include break(768px, 9999px) {
+			margin-left: 5%;
+			width: 50%;
+		}
+		h1 {
+			margin: 3% auto 2% auto;
+			text-align: center;
+			@include break(768px, 9999px) {
+			 	margin-top: 0; 
+			}
+
+			img {
+				width: 50%;
+				@include break(768px, 9999px) {
+					width: 40%;
+				} 
+			}
+		}
+		
+		p {
+			margin: 0 auto;
+			width: 100%;
+			font-size: 1em;
+			@include break(768px, 992px) {
+				margin-top: 7%;
+		    }
+		}
+	}
+}
+
+// Chevron icon
+.chevron-icon-wrap {
+	width: 10%;
+    text-align: center;
+    margin: 0 auto;
+    @include break(768px, 950px) {
+		margin-top: 1%;
+	}
+	@include break(950px, 9999px) {
+		margin-top: 1%;
+	}
+	@include breakHeight(0, 415px) {
+		margin-top: 2%;
+	}
+}
+
+// Social media icons
+.social-media-icons-wrap{
+	width: 100%;
+	text-align: center;
+	@include break(768px, 9999px) {
+		margin-top: 1%;
+		text-align: right;
+	}
+	.fa-circle-thinner:before {
+    	box-sizing: border-box;
+    	display: block;
+    	width: 2em;
+    	height: 2em;
+    	padding-top: 0.4em;
+    	text-align: center;
+    	border-radius: 100%;
+    	border: 2px solid $light-gray;
+	}
+
+	.fa {
+		color: $light-gray;
+		margin: 2px;
+		&:hover {
+			transform: scale(1.1);
+			transition: all 0.6s ease;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

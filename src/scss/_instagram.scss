@@ -1,0 +1,39 @@
+.section-instagram-wrap{
+	margin-top: 100px;
+	position: relative;
+	.raster-image {
+		position: absolute;
+		top: -40px;
+		left: -30px;
+		@include break(0, 435px) {
+  		 	 	display: none;
+  		 	}
+	}
+	.sbi_header_link {
+		.sbi_header_text {
+			color: $black;
+			&:hover {
+			color: $gray;
+		}
+			
+		}
+
+	}
+#sb_instagram {
+	.sbi_follow_btn {
+		background-color: $white;
+		a {
+			background-color: $darker-green;
+			border-radius: 0;
+		}
+	}
+	#sbi_load {
+		.sbi_load_btn {
+			border-radius: 0;
+		}
+
+	}
+}			
+}
+
+

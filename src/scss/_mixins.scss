@@ -1,0 +1,26 @@
+
+@mixin break($minLength,$maxLength) {
+	@media (min-width: $minLength) and (max-width: $maxLength) {
+		@content;
+	}
+}
+
+@mixin breakHeight($minHeight,$maxHeight) {
+	@media (min-height: $minHeight) and (max-height: $maxHeight) {
+		@content;
+	}
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+// $large_desktop: 1200px;
+// $desktop: 992px;
+// $tablets: 768px;
+// $landscape_phones: 576px;
+// Default: < 576px
